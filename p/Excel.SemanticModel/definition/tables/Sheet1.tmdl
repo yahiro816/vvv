@@ -1,0 +1,57 @@
+table Sheet1
+	lineageTag: 20d55dd5-c3f3-4d41-88e9-732499711fe3
+
+	measure 現在日時 = UTCNow()+ Time(9,0,0)
+		formatString: General Date
+		lineageTag: 2b138a70-4126-4653-80ff-c26dc0a30102
+
+	measure 検索結果総件数 = Countrows(Sheet1)
+		formatString: 0
+		lineageTag: 65e337c1-c51d-470f-adeb-973188e07ad3
+
+	column 名前
+		dataType: string
+		lineageTag: a9a21cf5-2d4c-408f-bea6-74013bb311f7
+		summarizeBy: none
+		sourceColumn: 名前
+
+		annotation SummarizationSetBy = Automatic
+
+	column 生産地
+		dataType: string
+		lineageTag: 916aec68-5fdb-4bbb-803f-5e3162d5797d
+		summarizeBy: none
+		sourceColumn: 生産地
+
+		annotation SummarizationSetBy = Automatic
+
+	column 野菜
+		dataType: string
+		lineageTag: becfa507-b4d6-498e-b0a0-68a50fc20a33
+		summarizeBy: none
+		sourceColumn: 野菜
+
+		annotation SummarizationSetBy = Automatic
+
+	column 売上高
+		dataType: string
+		lineageTag: e04709d9-7799-4930-8285-25d0e94cd248
+		summarizeBy: none
+		sourceColumn: 売上高
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sheet1 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\MSSPAdm01\Downloads\野菜.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true])
+				in
+				    #"Promoted Headers"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

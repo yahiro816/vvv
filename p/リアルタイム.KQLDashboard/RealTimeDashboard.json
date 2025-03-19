@@ -1,0 +1,35 @@
+{
+  "autoRefresh": {
+    "enabled": false
+  },
+  "baseQueries": [],
+  "tiles": [],
+  "dataSources": [],
+  "pages": [
+    {
+      "name": "ページ 1",
+      "id": "fd62ddbb-3106-4ca0-a446-67fb3baecbfa"
+    }
+  ],
+  "parameters": [
+    {
+      "kind": "duration",
+      "id": "648a22d0-68ea-4f1d-b5ce-6f7df4dd4947",
+      "displayName": "時間の範囲",
+      "description": "",
+      "beginVariableName": "_startTime",
+      "endVariableName": "_endTime",
+      "defaultValue": {
+        "kind": "dynamic",
+        "count": 1,
+        "unit": "hours"
+      },
+      "showOnPages": {
+        "kind": "all"
+      }
+    }
+  ],
+  "queries": [],
+  "schema_version": "61",
+  "title": "リアルタイム"
+}

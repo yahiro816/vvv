@@ -1,0 +1,10 @@
+relationship be19d40b-ed2e-41c5-8ca3-4ffeb4e3f4b7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: test1.lpep_pickup_datetime
+	toColumn: LocalDateTable_79ed2e67-d291-4ac6-8f78-34c69d3d9dac.Date
+
+relationship eac2531c-10ac-4619-80c9-6c4c262347e5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: test1.lpep_dropoff_datetime
+	toColumn: LocalDateTable_1586f1b7-e49a-424f-81cf-30839ceea487.Date
+

@@ -1,0 +1,246 @@
+table 'SalesLT vProductModelCatalogDescription'
+	lineageTag: ac24a541-fceb-4787-93f9-90458ae64c14
+
+	column ProductModelID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 1008a296-22fa-4cbe-b2e9-f9753ed14607
+		summarizeBy: count
+		sourceColumn: ProductModelID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(50)
+		lineageTag: bad426f3-402c-4e5f-b0ac-2dceb401f251
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Summary
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: bce32864-8025-4289-aef1-8f3829f9ef87
+		summarizeBy: none
+		sourceColumn: Summary
+
+		annotation SummarizationSetBy = Automatic
+
+	column Manufacturer
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 5d55d99b-3745-487b-89a0-6d01e2677ee8
+		summarizeBy: none
+		sourceColumn: Manufacturer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Copyright
+		dataType: string
+		sourceProviderType: nvarchar(30)
+		lineageTag: ba52b684-5266-4a1d-9f5e-a0cd84392c98
+		summarizeBy: none
+		sourceColumn: Copyright
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductURL
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: dd0a1ce9-645e-487e-986c-b646e507be6b
+		summarizeBy: none
+		sourceColumn: ProductURL
+
+		annotation SummarizationSetBy = Automatic
+
+	column WarrantyPeriod
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: 31619f6e-67ac-453a-a31a-9cdc2987eac9
+		summarizeBy: none
+		sourceColumn: WarrantyPeriod
+
+		annotation SummarizationSetBy = Automatic
+
+	column WarrantyDescription
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: 0bcaba30-5d38-41c8-a761-a877c45506af
+		summarizeBy: none
+		sourceColumn: WarrantyDescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column NoOfYears
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: b4ab6244-5ff7-496a-91e9-26d7c5605a56
+		summarizeBy: none
+		sourceColumn: NoOfYears
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaintenanceDescription
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: 0a468a8e-7443-47ac-928c-ca12bb79405c
+		summarizeBy: none
+		sourceColumn: MaintenanceDescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column Wheel
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: 1d69501e-8fb2-4573-8f8f-6c87a9c38302
+		summarizeBy: none
+		sourceColumn: Wheel
+
+		annotation SummarizationSetBy = Automatic
+
+	column Saddle
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: 50dd43a1-9a52-4b21-b4fe-c361bf35b80f
+		summarizeBy: none
+		sourceColumn: Saddle
+
+		annotation SummarizationSetBy = Automatic
+
+	column Pedal
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: 623bd34c-3780-4f48-8b03-55c15ac24997
+		summarizeBy: none
+		sourceColumn: Pedal
+
+		annotation SummarizationSetBy = Automatic
+
+	column BikeFrame
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 977e88c3-d136-481f-8cb6-acae279aad01
+		summarizeBy: none
+		sourceColumn: BikeFrame
+
+		annotation SummarizationSetBy = Automatic
+
+	column Crankset
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: cd12ac3a-87c0-4225-9c8e-53f77529cc8c
+		summarizeBy: none
+		sourceColumn: Crankset
+
+		annotation SummarizationSetBy = Automatic
+
+	column PictureAngle
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: 58ea66c8-2513-49c2-acda-4927bde92d0a
+		summarizeBy: none
+		sourceColumn: PictureAngle
+
+		annotation SummarizationSetBy = Automatic
+
+	column PictureSize
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: 69258b23-d00b-411b-8ebd-06dd1dcab546
+		summarizeBy: none
+		sourceColumn: PictureSize
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductPhotoID
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: ee0e09ef-c358-4622-8481-c36b26dd1f0f
+		summarizeBy: none
+		sourceColumn: ProductPhotoID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Material
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: 85bd1ec9-2d45-4623-a010-323d20e601e1
+		summarizeBy: none
+		sourceColumn: Material
+
+		annotation SummarizationSetBy = Automatic
+
+	column Color
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: 19cad89e-fa5d-444a-9adf-3827b6048b55
+		summarizeBy: none
+		sourceColumn: Color
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductLine
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: 5c048286-9d9d-46ea-a6ce-f04a20795f69
+		summarizeBy: none
+		sourceColumn: ProductLine
+
+		annotation SummarizationSetBy = Automatic
+
+	column Style
+		dataType: string
+		sourceProviderType: nvarchar(256)
+		lineageTag: 159cd721-1046-49fe-b7f9-9e0d143c896a
+		summarizeBy: none
+		sourceColumn: Style
+
+		annotation SummarizationSetBy = Automatic
+
+	column RiderExperience
+		dataType: string
+		sourceProviderType: nvarchar(1024)
+		lineageTag: b79cc6b1-c243-4cd4-a5b7-00d56ade165b
+		summarizeBy: none
+		sourceColumn: RiderExperience
+
+		annotation SummarizationSetBy = Automatic
+
+	column rowguid
+		dataType: string
+		isNullable: false
+		sourceProviderType: uniqueidentifier
+		lineageTag: 5a63df5a-fae4-4929-a9a3-bbd2f0c3b70a
+		summarizeBy: none
+		sourceColumn: rowguid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModifiedDate
+		dataType: dateTime
+		isNullable: false
+		formatString: General Date
+		sourceProviderType: datetime
+		lineageTag: b89ca173-d237-4113-b3a9-7da412ca7a7d
+		summarizeBy: none
+		sourceColumn: ModifiedDate
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'SalesLT vProductModelCatalogDescription' = m
+		mode: directQuery
+		source =
+				let
+				    ソース = Sql.Databases("bambees.database.windows.net"),
+				    Q = ソース{[Name="Q"]}[Data],
+				    SalesLT_vProductModelCatalogDescription = Q{[Schema="SalesLT",Item="vProductModelCatalogDescription"]}[Data]
+				in
+				    SalesLT_vProductModelCatalogDescription
+
+	annotation PBI_ResultType = Table
+

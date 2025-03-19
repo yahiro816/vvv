@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "synapse SSMS"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "24aa0074-88b5-b37b-4a45-7638b9b71e44"
+  }
+}
