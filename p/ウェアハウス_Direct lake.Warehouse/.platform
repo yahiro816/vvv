@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Warehouse",
+    "displayName": "ウェアハウス_Direct lake"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ca2eba84-738b-863b-4dd6-759803fb2e29"
+  }
+}

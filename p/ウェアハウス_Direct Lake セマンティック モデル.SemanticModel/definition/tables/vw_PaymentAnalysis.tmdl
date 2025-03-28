@@ -1,0 +1,46 @@
+table vw_PaymentAnalysis
+	lineageTag: b589f10b-260d-4876-a1da-208794319c0a
+	sourceLineageTag: [dbo].[vw_PaymentAnalysis]
+
+	column PaymentType
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 803bb19c-169b-4e2d-86b3-696df1a3ee81
+		sourceLineageTag: PaymentType
+		summarizeBy: none
+		sourceColumn: PaymentType
+
+		annotation SummarizationSetBy = Automatic
+
+	column PaymentsCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: e2c00002-137f-4b3d-85c6-3a3efd388a44
+		sourceLineageTag: PaymentsCount
+		summarizeBy: sum
+		sourceColumn: PaymentsCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalAmountProcessed
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 4f2459b2-a20d-4187-9d94-26347c58a4ba
+		sourceLineageTag: TotalAmountProcessed
+		summarizeBy: sum
+		sourceColumn: TotalAmountProcessed
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition vw_PaymentAnalysis = entity
+		mode: directLake
+		source
+			entityName: vw_PaymentAnalysis
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
