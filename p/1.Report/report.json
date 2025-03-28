@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "ページ 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "8960d71ba14616b0014b",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"d36d3b508c76ea566616\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.431947840260799,\"y\":0,\"z\":0,\"width\":1269.5680521597392,\"height\":719.8044009779951,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(test1.congestion_surcharge)\"},{\"queryRef\":\"CountNonNull(test1.DOLocationID)\"},{\"queryRef\":\"Sum(test1.ehail_fee)\"},{\"queryRef\":\"Sum(test1.extra)\"},{\"queryRef\":\"Sum(test1.fare_amount)\"},{\"queryRef\":\"Sum(test1.improvement_surcharge)\"},{\"queryRef\":\"Sum(test1.mta_tax)\"},{\"queryRef\":\"Sum(test1.passenger_count)\"},{\"queryRef\":\"Sum(test1.payment_type)\"},{\"queryRef\":\"CountNonNull(test1.PULocationID)\"},{\"queryRef\":\"CountNonNull(test1.RatecodeID)\"},{\"queryRef\":\"Sum(test1.tip_amount)\"},{\"queryRef\":\"Sum(test1.tolls_amount)\"},{\"queryRef\":\"Sum(test1.total_amount)\"},{\"queryRef\":\"Sum(test1.trip_distance)\"},{\"queryRef\":\"Sum(test1.trip_type)\"},{\"queryRef\":\"CountNonNull(test1.VendorID)\"}],\"Rows\":[{\"queryRef\":\"test1.lpep_dropoff_datetime\",\"active\":true},{\"queryRef\":\"test1.lpep_pickup_datetime\"}],\"Columns\":[{\"queryRef\":\"test1.store_and_fwd_flag\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"test1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"congestion_surcharge\"}},\"Function\":2},\"Name\":\"Sum(test1.congestion_surcharge)\",\"NativeReferenceName\":\"congestion_surcharge のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"DOLocationID\"}},\"Function\":5},\"Name\":\"CountNonNull(test1.DOLocationID)\",\"NativeReferenceName\":\"DOLocationID のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ehail_fee\"}},\"Function\":5},\"Name\":\"Sum(test1.ehail_fee)\",\"NativeReferenceName\":\"ehail_fee のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"extra\"}},\"Function\":5},\"Name\":\"Sum(test1.extra)\",\"NativeReferenceName\":\"extra のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"fare_amount\"}},\"Function\":5},\"Name\":\"Sum(test1.fare_amount)\",\"NativeReferenceName\":\"fare_amount のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"improvement_surcharge\"}},\"Function\":5},\"Name\":\"Sum(test1.improvement_surcharge)\",\"NativeReferenceName\":\"improvement_surcharge のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"mta_tax\"}},\"Function\":5},\"Name\":\"Sum(test1.mta_tax)\",\"NativeReferenceName\":\"mta_tax のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"passenger_count\"}},\"Function\":5},\"Name\":\"Sum(test1.passenger_count)\",\"NativeReferenceName\":\"passenger_count のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"payment_type\"}},\"Function\":5},\"Name\":\"Sum(test1.payment_type)\",\"NativeReferenceName\":\"payment_type のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"PULocationID\"}},\"Function\":5},\"Name\":\"CountNonNull(test1.PULocationID)\",\"NativeReferenceName\":\"PULocationID のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"RatecodeID\"}},\"Function\":5},\"Name\":\"CountNonNull(test1.RatecodeID)\",\"NativeReferenceName\":\"RatecodeID のカウント1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"store_and_fwd_flag\"},\"Name\":\"test1.store_and_fwd_flag\",\"NativeReferenceName\":\"store_and_fwd_flag\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"tip_amount\"}},\"Function\":5},\"Name\":\"Sum(test1.tip_amount)\",\"NativeReferenceName\":\"tip_amount のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"tolls_amount\"}},\"Function\":5},\"Name\":\"Sum(test1.tolls_amount)\",\"NativeReferenceName\":\"tolls_amount のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"total_amount\"}},\"Function\":5},\"Name\":\"Sum(test1.total_amount)\",\"NativeReferenceName\":\"total_amount のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"trip_distance\"}},\"Function\":5},\"Name\":\"Sum(test1.trip_distance)\",\"NativeReferenceName\":\"trip_distance のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"trip_type\"}},\"Function\":5},\"Name\":\"Sum(test1.trip_type)\",\"NativeReferenceName\":\"trip_type のカウント\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"VendorID\"}},\"Function\":5},\"Name\":\"CountNonNull(test1.VendorID)\",\"NativeReferenceName\":\"VendorID のカウント\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"lpep_dropoff_datetime\"},\"Name\":\"test1.lpep_dropoff_datetime\",\"NativeReferenceName\":\"lpep_dropoff_datetime\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"lpep_pickup_datetime\"},\"Name\":\"test1.lpep_pickup_datetime\",\"NativeReferenceName\":\"lpep_pickup_datetime\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 719.80,
+          "width": 1269.57,
+          "x": 10.43,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+table test1
+	lineageTag: fcb8e38e-da5f-4376-8d50-2ea265dc7c3d
+
+	column VendorID
+		dataType: int64
+		formatString: 0
+		lineageTag: 9171fc4e-3323-42ca-8d7b-2c0ab063b397
+		summarizeBy: count
+		sourceColumn: VendorID
+
+		annotation SummarizationSetBy = Automatic
+
+	column lpep_pickup_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ad7a1dcf-3577-47ac-829d-66f2dabee066
+		summarizeBy: none
+		sourceColumn: lpep_pickup_datetime
+
+		variation バリエーション
+			isDefault
+			relationship: 9d5c35a6-5e74-4013-9c97-b5f5e8af8f41
+			defaultHierarchy: LocalDateTable_16d6d55a-ecf6-487f-acaf-ce348dd13047.日付の階層
+
+		annotation SummarizationSetBy = Automatic
+
+	column lpep_dropoff_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2caf9a86-15ad-4274-ac49-42647bf28229
+		summarizeBy: none
+		sourceColumn: lpep_dropoff_datetime
+
+		variation バリエーション
+			isDefault
+			relationship: 621bb775-43a3-4df0-b26f-c5d59759d38e
+			defaultHierarchy: LocalDateTable_e9d42d0b-aeea-480f-9c21-7068c9b9f654.日付の階層
+
+		annotation SummarizationSetBy = Automatic
+
+	column store_and_fwd_flag
+		dataType: string
+		lineageTag: 03a9c602-64a6-4b6c-84dc-182823168949
+		summarizeBy: none
+		sourceColumn: store_and_fwd_flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column RatecodeID
+		dataType: int64
+		formatString: 0
+		lineageTag: 9a48898b-f5c5-4bfa-ab76-726d4e9867fd
+		summarizeBy: count
+		sourceColumn: RatecodeID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PULocationID
+		dataType: int64
+		formatString: 0
+		lineageTag: 25d452fa-240f-477d-9abd-e1e84525cf6c
+		summarizeBy: count
+		sourceColumn: PULocationID
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOLocationID
+		dataType: int64
+		formatString: 0
+		lineageTag: b36bd255-473c-4f2c-aead-034b4d4c4091
+		summarizeBy: count
+		sourceColumn: DOLocationID
+
+		annotation SummarizationSetBy = Automatic
+
+	column passenger_count
+		dataType: int64
+		formatString: 0
+		lineageTag: df334d6a-90c0-457f-961c-fd49727d0cff
+		summarizeBy: sum
+		sourceColumn: passenger_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column trip_distance
+		dataType: double
+		lineageTag: 06e30e35-8517-4e1f-9cd5-15bceed93172
+		summarizeBy: sum
+		sourceColumn: trip_distance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fare_amount
+		dataType: double
+		lineageTag: 2dd95a82-e386-4df1-aaea-38ad913e7c5d
+		summarizeBy: sum
+		sourceColumn: fare_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column extra
+		dataType: double
+		lineageTag: ca07533f-21b7-42d7-9ffd-91c0d79f89d0
+		summarizeBy: sum
+		sourceColumn: extra
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column mta_tax
+		dataType: double
+		lineageTag: 9c55266e-c672-4481-94cc-198988b93af2
+		summarizeBy: sum
+		sourceColumn: mta_tax
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column tip_amount
+		dataType: double
+		lineageTag: 52180e83-fb83-4254-8f40-7efe647dc3e7
+		summarizeBy: sum
+		sourceColumn: tip_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column tolls_amount
+		dataType: double
+		lineageTag: e9341761-dc93-4379-87c1-6c4b8d81ca45
+		summarizeBy: sum
+		sourceColumn: tolls_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ehail_fee
+		dataType: double
+		lineageTag: 2cea25b2-73ac-4206-9a55-0dd1108e37a9
+		summarizeBy: sum
+		sourceColumn: ehail_fee
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column improvement_surcharge
+		dataType: double
+		lineageTag: a6416f3c-ef4f-4755-ad97-e4e14cba3eb4
+		summarizeBy: sum
+		sourceColumn: improvement_surcharge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_amount
+		dataType: double
+		lineageTag: 3461546c-6a07-4a52-b54d-9c236de67914
+		summarizeBy: sum
+		sourceColumn: total_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column payment_type
+		dataType: int64
+		formatString: 0
+		lineageTag: dc82c8e0-66b8-42bc-b514-7d082f68f9c3
+		summarizeBy: sum
+		sourceColumn: payment_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column trip_type
+		dataType: int64
+		formatString: 0
+		lineageTag: a15e7aa3-5a8e-4cc3-8527-e256159a1558
+		summarizeBy: sum
+		sourceColumn: trip_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column congestion_surcharge
+		dataType: double
+		lineageTag: 722f6db4-aab2-4156-8cab-ef37a9103f48
+		summarizeBy: sum
+		sourceColumn: congestion_surcharge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition test1 = m
+		mode: import
+		source =
+				let
+				    ソース = Sql.Databases("hhh.sql.azuresynapse.net"),
+				    test = ソース{[Name="test"]}[Data],
+				    dbo_test1 = test{[Schema="dbo",Item="test1"]}[Data]
+				in
+				    dbo_test1
+
+	annotation PBI_ResultType = Table
+
