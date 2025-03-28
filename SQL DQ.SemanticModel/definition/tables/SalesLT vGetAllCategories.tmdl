@@ -1,0 +1,44 @@
+table 'SalesLT vGetAllCategories'
+	lineageTag: 6ee8898b-ecd1-4e59-b9e8-77f58cd53a34
+
+	column ParentProductCategoryName
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(50)
+		lineageTag: 78bdd7cb-ecd5-4857-8acd-ea773e0d7dcf
+		summarizeBy: none
+		sourceColumn: ParentProductCategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductCategoryName
+		dataType: string
+		sourceProviderType: nvarchar(50)
+		lineageTag: ecde32b0-e8dd-4e8f-a71a-6dce621dc895
+		summarizeBy: none
+		sourceColumn: ProductCategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductCategoryID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 57410a49-eadc-4c6d-a512-34412411cf30
+		summarizeBy: count
+		sourceColumn: ProductCategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'SalesLT vGetAllCategories' = m
+		mode: directQuery
+		source =
+				let
+				    ソース = Sql.Databases("bambees.database.windows.net"),
+				    Q = ソース{[Name="Q"]}[Data],
+				    SalesLT_vGetAllCategories = Q{[Schema="SalesLT",Item="vGetAllCategories"]}[Data]
+				in
+				    SalesLT_vGetAllCategories
+
+	annotation PBI_ResultType = Table
+

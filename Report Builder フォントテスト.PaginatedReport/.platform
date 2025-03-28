@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "PaginatedReport",
+    "displayName": "Report Builder フォントテスト"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "73eda54b-ae01-b38d-4616-5ca87a8cf84b"
+  }
+}

@@ -1,0 +1,56 @@
+table BuildVersion
+	lineageTag: d66b9882-812c-4904-ae4a-6eaae390b15c
+	sourceLineageTag: [dbo].[BuildVersion]
+
+	column SystemInformationID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: smallint
+		lineageTag: c3102fef-4ddf-48c8-82c0-bd96a165c2b0
+		sourceLineageTag: SystemInformationID
+		summarizeBy: count
+		sourceColumn: SystemInformationID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Database_Version
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d6d1e3f9-6810-472f-9d19-68385debda29
+		sourceLineageTag: Database_Version
+		summarizeBy: none
+		sourceColumn: Database_Version
+
+		annotation SummarizationSetBy = Automatic
+
+	column VersionDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 28cdf454-2da0-4f5f-a67d-1d7aedde241b
+		sourceLineageTag: VersionDate
+		summarizeBy: none
+		sourceColumn: VersionDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModifiedDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 09dc59b7-e559-4d76-924f-95d28ea45990
+		sourceLineageTag: ModifiedDate
+		summarizeBy: none
+		sourceColumn: ModifiedDate
+
+		annotation SummarizationSetBy = Automatic
+
+	partition BuildVersion = entity
+		mode: directLake
+		source
+			entityName: BuildVersion
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

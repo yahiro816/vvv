@@ -1,0 +1,30 @@
+model Model
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.140.1577.0 (25.02)+00af0910c5ca19a229c472b0dfc17a2c488f6b0a
+
+annotation PBI_QueryOrder = ["DatabaseQuery"]
+
+annotation __PBIService_Versioning_SaveVersion = f3137cf4-db90-491c-856e-ce1ebc6f74a3
+
+annotation PBI_ProTooling = ["WebModelingEdit","RemoteModeling"]
+
+ref table vw_PaymentAnalysis
+ref table Date
+ref table Geography
+ref table HackneyLicense
+ref table Weather
+ref table Trip
+ref table Medallion
+ref table Time
+
+ref cultureInfo en-US
+

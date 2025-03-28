@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "SQL DQ"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "46b1952d-5b0a-bfee-4392-2998cd37497f"
+  }
+}

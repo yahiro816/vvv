@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "ページ 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c48df8605e0900dd5e15",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2fcbf9b04cca85907d93\",\"layouts\":[{\"id\":0,\"position\":{\"x\":138.11550151975683,\"y\":71.00303951367782,\"z\":0,\"width\":990.1519756838907,\"height\":577.7507598784194,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(test1.congestion_surcharge)\"},{\"queryRef\":\"CountNonNull(test1.DOLocationID)\"},{\"queryRef\":\"Sum(test1.ehail_fee)\"},{\"queryRef\":\"Sum(test1.extra)\"},{\"queryRef\":\"Sum(test1.fare_amount)\"},{\"queryRef\":\"Sum(test1.improvement_surcharge)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"test1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"congestion_surcharge\"},\"Name\":\"Sum(test1.congestion_surcharge)\",\"NativeReferenceName\":\"congestion_surcharge\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"DOLocationID\"},\"Name\":\"CountNonNull(test1.DOLocationID)\",\"NativeReferenceName\":\"DOLocationID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ehail_fee\"},\"Name\":\"Sum(test1.ehail_fee)\",\"NativeReferenceName\":\"ehail_fee\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"extra\"},\"Name\":\"Sum(test1.extra)\",\"NativeReferenceName\":\"extra\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"fare_amount\"},\"Name\":\"Sum(test1.fare_amount)\",\"NativeReferenceName\":\"fare_amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"improvement_surcharge\"},\"Name\":\"Sum(test1.improvement_surcharge)\",\"NativeReferenceName\":\"improvement_surcharge\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 577.75,
+          "width": 990.15,
+          "x": 138.12,
+          "y": 71.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

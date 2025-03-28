@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "ウェアハウス_Direct Lake セマンティック モデル"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "320c6012-3a13-85d9-47a2-c930b35c5c74"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b9eb305424b50b548b8a",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"9ab236458481e0c04e68\",\"layouts\":[{\"id\":0,\"position\":{\"x\":64.19452887537994,\"y\":101.15501519756839,\"z\":0,\"width\":470.7598784194529,\"height\":328.7537993920973,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.名前\"},{\"queryRef\":\"Sheet1.売上高\"},{\"queryRef\":\"Sheet1.生産地\"},{\"queryRef\":\"Sheet1.野菜\"},{\"queryRef\":\"Sheet1.検索結果総件数\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"名前\"},\"Name\":\"Sheet1.名前\",\"NativeReferenceName\":\"名前\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"売上高\"},\"Name\":\"Sheet1.売上高\",\"NativeReferenceName\":\"売上高\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"生産地\"},\"Name\":\"Sheet1.生産地\",\"NativeReferenceName\":\"生産地\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"野菜\"},\"Name\":\"Sheet1.野菜\",\"NativeReferenceName\":\"野菜\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"検索結果総件数\"},\"Name\":\"Sheet1.検索結果総件数\",\"NativeReferenceName\":\"検索結果総件数\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 328.75,
+          "width": 470.76,
+          "x": 64.19,
+          "y": 101.16,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c77e045b105a99b1a155\",\"layouts\":[{\"id\":0,\"position\":{\"x\":64.19452887537994,\"y\":429.90881458966567,\"z\":1,\"width\":470.7598784194529,\"height\":289.84802431610944,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.現在日時\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"現在日時\"},\"Name\":\"Sheet1.現在日時\",\"NativeReferenceName\":\"現在日時\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"現在日時\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 289.85,
+          "width": 470.76,
+          "x": 64.19,
+          "y": 429.91,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

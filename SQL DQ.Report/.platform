@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "SQL DQ"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "091f9537-0e0e-a350-49ab-1b6f200a4914"
+  }
+}

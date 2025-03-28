@@ -1,0 +1,20 @@
+model Model
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.140.7567.2 (Main)+00b9d5349606b9b9f9c025534bd2c34eaa001a13
+
+annotation PBI_QueryOrder = ["DatabaseQuery"]
+
+ref table BuildVersion
+ref table 'SalesLT vProductModelCatalogDescription'
+
+ref cultureInfo en-US
+

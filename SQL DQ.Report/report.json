@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "ページ 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "0c098e098889fcca383f",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"179037430f6c8bbc9df9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":70.03039513677813,\"y\":91.42857142857143,\"z\":0,\"width\":881.2158054711247,\"height\":497.9939209726444,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"SalesLT vGetAllCategories.ParentProductCategoryName\"},{\"queryRef\":\"CountNonNull(SalesLT vGetAllCategories.ProductCategoryID)\"},{\"queryRef\":\"SalesLT vGetAllCategories.ProductCategoryName\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"SalesLT vGetAllCategories\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ParentProductCategoryName\"},\"Name\":\"SalesLT vGetAllCategories.ParentProductCategoryName\",\"NativeReferenceName\":\"ParentProductCategoryName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ProductCategoryID\"},\"Name\":\"CountNonNull(SalesLT vGetAllCategories.ProductCategoryID)\",\"NativeReferenceName\":\"ProductCategoryID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ProductCategoryName\"},\"Name\":\"SalesLT vGetAllCategories.ProductCategoryName\",\"NativeReferenceName\":\"ProductCategoryName\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 497.99,
+          "width": 881.22,
+          "x": 70.03,
+          "y": 91.43,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
